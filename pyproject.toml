@@ -1,0 +1,41 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "bedrock-support"
+version = "0.1.0"
+description = ""
+authors = [
+  "Nour El Mawass <nour.elmawass@tweag.io>",
+  "Joe Neeman <joe.neeman@tweag.io@tweag.io>",
+  "Guillaume Desforges <guillaume.desforges@tweag.io>",
+  "Maria Knorps <maria.knorps@tweag.io>",
+  "Simeon Carstens <simeon.carstens@tweag.io>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+boto3 = "^1.28.53"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+isort = "^5.12.0"
+ruff = "^0.0.290"
+fawltydeps = "^0.13.1"
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+select = ["F", "I", "PD"]
+
+[tool.fawltydeps]
+ignore_unused = [
+  "black",
+  "isort",
+  "fawltydeps",
+  "pylint",
+  "ruff",
+]
