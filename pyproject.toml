@@ -20,7 +20,7 @@ python = "^3.11"
 boto3 = "^1.28.53"
 
 [tool.poetry.group.dev.dependencies]
-black = "^23.9.1"
+black = "^24.3.0"
 isort = "^5.12.0"
 ruff = "^0.0.290"
 fawltydeps = "^0.13.1"
