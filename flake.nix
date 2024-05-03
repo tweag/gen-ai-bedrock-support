@@ -1,5 +1,5 @@
 {
-  description = "A devshell for confluence_benchmark";
+  description = "A devshell for gen-ai-bedrock-support";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-23.11";
